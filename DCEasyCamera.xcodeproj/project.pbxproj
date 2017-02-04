@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F67344F71E178A60006D1EFC /* DCCaptureDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F67344F61E178A60006D1EFC /* DCCaptureDeviceHelper.m */; };
+		F67344FD1E17968E006D1EFC /* DCCaptureOutputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F67344FC1E17968E006D1EFC /* DCCaptureOutputManager.m */; };
+		F67345001E17A039006D1EFC /* DCCaptureInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F67344FF1E17A039006D1EFC /* DCCaptureInputManager.m */; };
 		F682D2DA1E12B2B9000C1F59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D2D91E12B2B9000C1F59 /* main.m */; };
 		F682D2DD1E12B2B9000C1F59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D2DC1E12B2B9000C1F59 /* AppDelegate.m */; };
 		F682D2E01E12B2B9000C1F59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D2DF1E12B2B9000C1F59 /* ViewController.m */; };
@@ -15,6 +18,11 @@
 		F682D2E81E12B2B9000C1F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F682D2E61E12B2B9000C1F59 /* LaunchScreen.storyboard */; };
 		F682D2F31E12B2B9000C1F59 /* DCEasyCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D2F21E12B2B9000C1F59 /* DCEasyCameraTests.m */; };
 		F682D2FE1E12B2B9000C1F59 /* DCEasyCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D2FD1E12B2B9000C1F59 /* DCEasyCameraUITests.m */; };
+		F682D30E1E12B36D000C1F59 /* DCCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D30D1E12B36D000C1F59 /* DCCamera.m */; };
+		F682D3111E12B402000C1F59 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F682D3101E12B402000C1F59 /* AVFoundation.framework */; };
+		F682D3141E12B440000C1F59 /* DCCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D3131E12B440000C1F59 /* DCCaptureSession.m */; };
+		F682D3171E12B54A000C1F59 /* DCCapturePreViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F682D3161E12B54A000C1F59 /* DCCapturePreViewLayer.m */; };
+		F6E7DFF11E22649900C64EC0 /* DCCameraShot.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E7DFF01E22649900C64EC0 /* DCCameraShot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F67344F51E178A60006D1EFC /* DCCaptureDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCaptureDeviceHelper.h; sourceTree = "<group>"; };
+		F67344F61E178A60006D1EFC /* DCCaptureDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCaptureDeviceHelper.m; sourceTree = "<group>"; };
+		F67344FB1E17968E006D1EFC /* DCCaptureOutputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCaptureOutputManager.h; sourceTree = "<group>"; };
+		F67344FC1E17968E006D1EFC /* DCCaptureOutputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCaptureOutputManager.m; sourceTree = "<group>"; };
+		F67344FE1E17A039006D1EFC /* DCCaptureInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCaptureInputManager.h; sourceTree = "<group>"; };
+		F67344FF1E17A039006D1EFC /* DCCaptureInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCaptureInputManager.m; sourceTree = "<group>"; };
 		F682D2D51E12B2B9000C1F59 /* DCEasyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCEasyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F682D2D91E12B2B9000C1F59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F682D2DB1E12B2B9000C1F59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +65,15 @@
 		F682D2F91E12B2B9000C1F59 /* DCEasyCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCEasyCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F682D2FD1E12B2B9000C1F59 /* DCEasyCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCEasyCameraUITests.m; sourceTree = "<group>"; };
 		F682D2FF1E12B2B9000C1F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F682D30C1E12B36D000C1F59 /* DCCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCamera.h; sourceTree = "<group>"; };
+		F682D30D1E12B36D000C1F59 /* DCCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCamera.m; sourceTree = "<group>"; };
+		F682D3101E12B402000C1F59 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F682D3121E12B440000C1F59 /* DCCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCaptureSession.h; sourceTree = "<group>"; };
+		F682D3131E12B440000C1F59 /* DCCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCaptureSession.m; sourceTree = "<group>"; };
+		F682D3151E12B54A000C1F59 /* DCCapturePreViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCapturePreViewLayer.h; sourceTree = "<group>"; };
+		F682D3161E12B54A000C1F59 /* DCCapturePreViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCapturePreViewLayer.m; sourceTree = "<group>"; };
+		F6E7DFEF1E22649900C64EC0 /* DCCameraShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCameraShot.h; sourceTree = "<group>"; };
+		F6E7DFF01E22649900C64EC0 /* DCCameraShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCameraShot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F682D3111E12B402000C1F59 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F67344F41E17836B006D1EFC /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Deprecated;
+			sourceTree = "<group>";
+		};
 		F682D2CC1E12B2B8000C1F59 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +116,7 @@
 				F682D2F11E12B2B9000C1F59 /* DCEasyCameraTests */,
 				F682D2FC1E12B2B9000C1F59 /* DCEasyCameraUITests */,
 				F682D2D61E12B2B9000C1F59 /* Products */,
+				F682D30F1E12B402000C1F59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +133,7 @@
 		F682D2D71E12B2B9000C1F59 /* DCEasyCamera */ = {
 			isa = PBXGroup;
 			children = (
+				F682D30B1E12B305000C1F59 /* DC */,
 				F682D2DB1E12B2B9000C1F59 /* AppDelegate.h */,
 				F682D2DC1E12B2B9000C1F59 /* AppDelegate.m */,
 				F682D2DE1E12B2B9000C1F59 /* ViewController.h */,
@@ -138,6 +171,36 @@
 				F682D2FF1E12B2B9000C1F59 /* Info.plist */,
 			);
 			path = DCEasyCameraUITests;
+			sourceTree = "<group>";
+		};
+		F682D30B1E12B305000C1F59 /* DC */ = {
+			isa = PBXGroup;
+			children = (
+				F682D30C1E12B36D000C1F59 /* DCCamera.h */,
+				F682D30D1E12B36D000C1F59 /* DCCamera.m */,
+				F682D3121E12B440000C1F59 /* DCCaptureSession.h */,
+				F682D3131E12B440000C1F59 /* DCCaptureSession.m */,
+				F682D3151E12B54A000C1F59 /* DCCapturePreViewLayer.h */,
+				F682D3161E12B54A000C1F59 /* DCCapturePreViewLayer.m */,
+				F67344FE1E17A039006D1EFC /* DCCaptureInputManager.h */,
+				F67344FF1E17A039006D1EFC /* DCCaptureInputManager.m */,
+				F67344F51E178A60006D1EFC /* DCCaptureDeviceHelper.h */,
+				F67344F61E178A60006D1EFC /* DCCaptureDeviceHelper.m */,
+				F67344FB1E17968E006D1EFC /* DCCaptureOutputManager.h */,
+				F67344FC1E17968E006D1EFC /* DCCaptureOutputManager.m */,
+				F6E7DFEF1E22649900C64EC0 /* DCCameraShot.h */,
+				F6E7DFF01E22649900C64EC0 /* DCCameraShot.m */,
+				F67344F41E17836B006D1EFC /* Deprecated */,
+			);
+			name = DC;
+			sourceTree = "<group>";
+		};
+		F682D30F1E12B402000C1F59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F682D3101E12B402000C1F59 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +270,7 @@
 				TargetAttributes = {
 					F682D2D41E12B2B8000C1F59 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 56JANUDAHZ;
 						ProvisioningStyle = Automatic;
 					};
 					F682D2ED1E12B2B9000C1F59 = {
@@ -273,9 +337,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67344FD1E17968E006D1EFC /* DCCaptureOutputManager.m in Sources */,
 				F682D2E01E12B2B9000C1F59 /* ViewController.m in Sources */,
+				F682D30E1E12B36D000C1F59 /* DCCamera.m in Sources */,
+				F67345001E17A039006D1EFC /* DCCaptureInputManager.m in Sources */,
 				F682D2DD1E12B2B9000C1F59 /* AppDelegate.m in Sources */,
 				F682D2DA1E12B2B9000C1F59 /* main.m in Sources */,
+				F682D3171E12B54A000C1F59 /* DCCapturePreViewLayer.m in Sources */,
+				F6E7DFF11E22649900C64EC0 /* DCCameraShot.m in Sources */,
+				F682D3141E12B440000C1F59 /* DCCaptureSession.m in Sources */,
+				F67344F71E178A60006D1EFC /* DCCaptureDeviceHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56JANUDAHZ;
 				INFOPLIST_FILE = DCEasyCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = D.C.DCEasyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +508,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56JANUDAHZ;
 				INFOPLIST_FILE = DCEasyCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = D.C.DCEasyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +582,7 @@
 				F682D3041E12B2B9000C1F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F682D3051E12B2B9000C1F59 /* Build configuration list for PBXNativeTarget "DCEasyCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +591,7 @@
 				F682D3071E12B2B9000C1F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F682D3081E12B2B9000C1F59 /* Build configuration list for PBXNativeTarget "DCEasyCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +600,7 @@
 				F682D30A1E12B2B9000C1F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
