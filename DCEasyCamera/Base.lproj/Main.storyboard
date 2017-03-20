@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,19 +34,8 @@
                                     <action selector="captureButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiE-kU-Adg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5T-0u-gJy">
-                                <rect key="frame" x="299" y="24" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="T9e-TG-agN"/>
-                                    <constraint firstAttribute="width" constant="64" id="qfb-D6-RHy"/>
-                                </constraints>
-                                <state key="normal" image="camera_flip"/>
-                                <connections>
-                                    <action selector="flipButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXv-37-wTA"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeY-xI-EyT">
-                                <rect key="frame" x="20" y="24" width="64" height="64"/>
+                                <rect key="frame" x="16" y="24" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Xkr-ua-axG"/>
                                     <constraint firstAttribute="width" constant="64" id="dLQ-KR-p35"/>
@@ -55,20 +45,44 @@
                                     <action selector="flashButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55n-em-ci9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5T-0u-gJy">
+                                <rect key="frame" x="295" y="24" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="T9e-TG-agN"/>
+                                    <constraint firstAttribute="width" constant="64" id="qfb-D6-RHy"/>
+                                </constraints>
+                                <state key="normal" image="camera_flip"/>
+                                <connections>
+                                    <action selector="flipButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXv-37-wTA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wqu-Ei-gad">
+                                <rect key="frame" x="16" y="536.5" width="129" height="120.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wqu-Ei-gad" secondAttribute="height" multiplier="137:128" id="UhR-Ck-k08"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P5T-0u-gJy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="0ni-on-dvN"/>
-                            <constraint firstItem="P5T-0u-gJy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="4" id="822-3L-LZM"/>
+                            <constraint firstItem="P5T-0u-gJy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="822-3L-LZM"/>
+                            <constraint firstItem="JnU-dJ-ikI" firstAttribute="leading" secondItem="wqu-Ei-gad" secondAttribute="trailing" constant="10" id="BM8-rs-q0d"/>
                             <constraint firstItem="JnU-dJ-ikI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DtA-KI-L8N"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wqu-Ei-gad" secondAttribute="bottom" constant="10" id="WHI-eT-kMt"/>
                             <constraint firstItem="oeY-xI-EyT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="bhL-gA-lTr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JnU-dJ-ikI" secondAttribute="bottom" constant="49" id="iRw-80-3fa"/>
-                            <constraint firstItem="oeY-xI-EyT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="tgt-8l-23A"/>
+                            <constraint firstItem="oeY-xI-EyT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tgt-8l-23A"/>
+                            <constraint firstItem="wqu-Ei-gad" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wnJ-Q5-FtS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoView" destination="wqu-Ei-gad" id="WO8-kA-HSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="60.719640179910051"/>
         </scene>
     </scenes>
     <resources>

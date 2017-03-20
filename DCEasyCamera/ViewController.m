@@ -12,7 +12,7 @@
 @interface ViewController () <DCCameraDelegate>
 
 @property (nonatomic, strong) DCCamera             *camera;
-@property (nonatomic, strong) UIImageView             *photoView;
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
 
 @end
 
@@ -34,7 +34,6 @@
 
 - (void)setupUI
 {
-    
 }
 
 - (IBAction)captureButtonClicked:(id)sender {
