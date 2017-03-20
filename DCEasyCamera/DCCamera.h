@@ -40,6 +40,6 @@
  */
 - (DCCameraFlashMode)changeFlashMode;
 
-
+- (void)flipCamera;
 
 @end

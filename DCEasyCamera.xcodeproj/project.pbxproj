@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECE2576C1E7F8559005F9C8A /* DCCameraFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2576B1E7F8559005F9C8A /* DCCameraFlip.m */; };
 		F67344F71E178A60006D1EFC /* DCCaptureDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F67344F61E178A60006D1EFC /* DCCaptureDeviceHelper.m */; };
 		F67344FD1E17968E006D1EFC /* DCCaptureOutputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F67344FC1E17968E006D1EFC /* DCCaptureOutputManager.m */; };
 		F67345001E17A039006D1EFC /* DCCaptureInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F67344FF1E17A039006D1EFC /* DCCaptureInputManager.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ECE2576A1E7F8559005F9C8A /* DCCameraFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCameraFlip.h; sourceTree = "<group>"; };
+		ECE2576B1E7F8559005F9C8A /* DCCameraFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCameraFlip.m; sourceTree = "<group>"; };
 		F67344F51E178A60006D1EFC /* DCCaptureDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCaptureDeviceHelper.h; sourceTree = "<group>"; };
 		F67344F61E178A60006D1EFC /* DCCaptureDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCaptureDeviceHelper.m; sourceTree = "<group>"; };
 		F67344FB1E17968E006D1EFC /* DCCaptureOutputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCaptureOutputManager.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				F67344FC1E17968E006D1EFC /* DCCaptureOutputManager.m */,
 				F6E7DFEF1E22649900C64EC0 /* DCCameraShot.h */,
 				F6E7DFF01E22649900C64EC0 /* DCCameraShot.m */,
+				ECE2576A1E7F8559005F9C8A /* DCCameraFlip.h */,
+				ECE2576B1E7F8559005F9C8A /* DCCameraFlip.m */,
 				F67344F41E17836B006D1EFC /* Deprecated */,
 			);
 			name = DC;
@@ -270,7 +275,7 @@
 				TargetAttributes = {
 					F682D2D41E12B2B8000C1F59 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 56JANUDAHZ;
+						DevelopmentTeam = N5P964AM93;
 						ProvisioningStyle = Automatic;
 					};
 					F682D2ED1E12B2B9000C1F59 = {
@@ -340,6 +345,7 @@
 				F67344FD1E17968E006D1EFC /* DCCaptureOutputManager.m in Sources */,
 				F682D2E01E12B2B9000C1F59 /* ViewController.m in Sources */,
 				F682D30E1E12B36D000C1F59 /* DCCamera.m in Sources */,
+				ECE2576C1E7F8559005F9C8A /* DCCameraFlip.m in Sources */,
 				F67345001E17A039006D1EFC /* DCCaptureInputManager.m in Sources */,
 				F682D2DD1E12B2B9000C1F59 /* AppDelegate.m in Sources */,
 				F682D2DA1E12B2B9000C1F59 /* main.m in Sources */,
@@ -441,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,7 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56JANUDAHZ;
+				DEVELOPMENT_TEAM = N5P964AM93;
 				INFOPLIST_FILE = DCEasyCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -508,7 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56JANUDAHZ;
+				DEVELOPMENT_TEAM = N5P964AM93;
 				INFOPLIST_FILE = DCEasyCamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

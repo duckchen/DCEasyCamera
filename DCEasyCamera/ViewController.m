@@ -30,36 +30,22 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)setupUI
 {
-    UIButton * captureButton = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth/2 - 32, kScreenHeight - 100, 64, 64)];
-    [captureButton setBackgroundColor:[UIColor redColor]];
-    [captureButton addTarget:self action:@selector(captureButtonTouched) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:captureButton];
     
-    UIButton * flashButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 40, 32, 32)];
-    [flashButton addTarget:self action:@selector(flashButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
-    [flashButton setImage:[UIImage imageNamed:@"flashlight_close"] forState:UIControlStateNormal];
-    [self.view addSubview:flashButton];
-    
-    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, kScreenHeight - 144, 100, 100)];
-    _photoView = imageView;
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:imageView];
 }
 
-// take photo
-- (void)captureButtonTouched
-{
+- (IBAction)captureButtonClicked:(id)sender {
     [self.camera takePhoto];
 }
 
-// flash
-- (void)flashButtonTouched:(UIButton *)sender
-{
+- (IBAction)flipButtonClicked:(id)sender {
+    [self.camera flipCamera];
+}
+
+- (IBAction)flashButtonClicked:(id)sender {
     DCCameraFlashMode mode = [self.camera changeFlashMode];
     NSArray *nameList = @[@"flashlight_open", @"flashlight_close", @"flashlight_auto"];
     NSString *name = [nameList objectAtIndex:mode];

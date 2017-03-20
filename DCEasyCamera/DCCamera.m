@@ -9,6 +9,7 @@
 #import "DCCamera.h"
 #import "DCCaptureSession.h"
 #import "DCCapturePreViewLayer.h"
+#import "DCCameraFlip.h"
 
 @interface DCCamera () <DCCaptureSessionDelegate>
 
@@ -80,6 +81,11 @@
 - (DCCameraFlashMode)changeFlashMode
 {
     return [self.session changeFlashMode];
+}
+
+- (void)flipCamera
+{
+    [DCCameraFlip flipWithCaptureSession:self.session];
 }
 
 @end
